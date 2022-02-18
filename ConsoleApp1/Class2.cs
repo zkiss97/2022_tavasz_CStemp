@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Program
+    class Class2
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            // Változó tömbök létrehozása (hónapok)
-
             int[] January = new int[30];
             int[] February = new int[30];
             int[] March = new int[30];
@@ -25,18 +23,10 @@ namespace ConsoleApp1
             int[] November = new int[30];
             int[] December = new int[30];
 
-            //Hónapok neveit tartalmazó tömb
-
-            string[] Months = {"Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"};
-
-            // Minimum és maximum érték meghatározása
-
             Random rnd = new Random();
-            //int[][] allTemp = new int[12][];
+            int[][] allTemp = new int[12][];
             int minTemp = 40;
             int maxTemp = -10;
-
-            // Feltölti random értékekkel a hónapokat, "ésszerű" keretek között, azaz határokkal
 
             for (int i = 0; i < 30; i++)
             {
@@ -54,30 +44,26 @@ namespace ConsoleApp1
                 December[i] = rnd.Next(-10, 10);
             };
 
-            // Kezdődik a móka.
-            // Külső ciklus, végigmegy a hónapokon egymás után
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < January.Length; i++)
             {
-                // Belső ciklus, végigmegy egy hónap napjain
-                // Összehasonlítja az éves minimum és maximum értékeket, és ha 
-                for (int j = 0; j < January.Length; j++)
+                if (January[i] < minTemp)
                 {
-                    if (Months[i][j] < minTemp) //IndexOutOÖfRangeException
-                    {
-                        minTemp = Months[i][j];
-                    }
-                    if (Months[i][j] > maxTemp)
-                    {
-                        maxTemp = Months[i][j];
-                    }
-                    Console.WriteLine(Months[i] + "i minimum hőmérséklet: " + minTemp);
-                    Console.WriteLine(Months[i] + "i maximum hőmérséklet: " + maxTemp);
-                    minTemp = 40;
-                    maxTemp = -10;
+                    minTemp = January[i];
                 }
             }
-            Console.ReadLine();
+            Console.WriteLine(minTemp);*/
 
-        }
+            /*
+            for (int i = 0; i < 12; i++)
+            {
+                for (int j = 0; j < 30; j++)
+                {
+
+                }
+            }
+            */
+
+            //Console.ReadLine();
+        //}
     }
 }
