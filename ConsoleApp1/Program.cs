@@ -12,6 +12,8 @@ namespace ConsoleApp1
         {
             // Változó tömbök létrehozása (hónapok)
 
+
+
             int[] January = new int[30];
             int[] February = new int[30];
             int[] March = new int[30];
@@ -32,13 +34,48 @@ namespace ConsoleApp1
             // Minimum és maximum érték meghatározása
 
             Random rnd = new Random();
-            //int[][] allTemp = new int[12][];
+            // int[][] allTemp = new int[12][];
             int minTemp = 40;
             int maxTemp = -10;
 
+            // kétdimenziós tömb
+
+            int[,] WholeYear = new int[12,30];
+
+            for (int i = 0; i < 12; i++)
+            {
+                for (int j = 0; j < 30; j++)
+                {
+                    WholeYear[i, j] = rnd.Next(-10, 40);
+                    //Console.WriteLine(WholeYear[i, j]);
+                }
+                //Console.WriteLine("\n");
+            }
+            int sumHonap = 0;
+            for (int i = 0; i < 12; i++)
+            {
+                for (int j = 0; j < 30 ; j++)
+                {
+                    if (WholeYear[i,j] > maxTemp)
+                    {
+                        maxTemp = WholeYear[i, j];
+                        sumHonap = WholeYear[i, j]++;
+                    }
+                    if (WholeYear[i, j] < minTemp)
+                    {
+                        minTemp = WholeYear[i, j];
+                    }
+                    Console.WriteLine(sumHonap + i);
+                }
+
+            }
+            Console.WriteLine("Éves maximum = " + maxTemp);
+            Console.WriteLine("Éves minimum = " + minTemp);
+
             // Feltölti random értékekkel a hónapokat, "ésszerű" keretek között, azaz határokkal
 
-            for (int i = 0; i < 30; i++)
+            /*
+             * for (int i = 0; i < 30; i++)
             {
                 January[i] = rnd.Next(-10, 10);
                 February[i] = rnd.Next(-10, 10);
@@ -76,6 +113,7 @@ namespace ConsoleApp1
                     maxTemp = -10;
                 }
             }
+            */
             Console.ReadLine();
 
         }
