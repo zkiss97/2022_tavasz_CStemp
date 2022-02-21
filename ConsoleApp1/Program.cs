@@ -65,8 +65,9 @@ namespace ConsoleApp1
                     {
                         minTemp = WholeYear[i, j];
                     }
-                    Console.WriteLine(sumHonap + i);
                 }
+                Console.WriteLine(i);
+                Console.WriteLine(sumHonap);
 
             }
             Console.WriteLine("Éves maximum = " + maxTemp);
