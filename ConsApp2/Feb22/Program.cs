@@ -11,7 +11,7 @@ namespace Feb22
         static void Main(string[] args)
         {
             // Testtömegindex kiszámítása
-            
+            /*
             int heightCm;
             float weight;
             float index;
@@ -33,7 +33,19 @@ namespace Feb22
 
             Console.WriteLine("Testtömegindexe: " + index);
 
-            
+            */
+
+
+
+            // Osztályozás pontszám alapján
+
+            int pontszam;
+
+            Console.WriteLine("Adja meg a dolgozat pontszámát: ");
+            pontszam = int.Parse(Console.ReadLine());
+
+            if()
+
 
             Console.ReadLine();
         }
