@@ -38,7 +38,7 @@ namespace Feb22
 
 
             // Osztályozás pontszám alapján, működik
-
+            /*
             int pontszam;
 
             Console.WriteLine("Adja meg a dolgozat pontszámát: ");
@@ -56,7 +56,15 @@ namespace Feb22
                 Console.WriteLine("Jeles");
             else if ((pontszam > 100) || (pontszam < 0))
                 Console.WriteLine("!!!ÉRVÉNYTELEN!!!");
+            */
 
+
+
+            // Mezgaz jóslás
+            //feltételeztem hogy egész tonna búzát vetettek, és szintén egész tonna termett
+
+            int elvetett;
+            Random rnd = new Random();
 
 
             Console.ReadLine();
