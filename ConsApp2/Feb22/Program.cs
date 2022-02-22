@@ -77,7 +77,32 @@ namespace Feb22
 
 
 
+            //Hiányzások, működik
+
+            /*
+            int hianyzas;
+            string szuldatum;
+
+            Console.WriteLine("Adja meg a mulasztott órák számát:");
+            hianyzas = int.Parse(Console.ReadLine());
+
+            if (hianyzas <= 10)
+                Console.WriteLine("It's okay...");
+            else if (hianyzas > 10)
+            {
+                Console.WriteLine("Adja meg a tanuló születési dátumát: ");
+                szuldatum = Console.ReadLine();
+                if ((hianyzas > 10) && (hianyzas <= 20))
+                    Console.WriteLine("A(z) " + szuldatum + " napon született tanulót figyelmeztetésben részesítem.");
+                else if ((hianyzas > 20) && (hianyzas <= 30))
+                    Console.WriteLine("A(z) " + szuldatum + " napon született tanulót osztályfőnöki intőben részesítem.");
+                else if (hianyzas > 30)
+                    Console.WriteLine("A(z) " + szuldatum + " napon született tanulót felfüggesztésben részesítem.");
+            }
+            */
+
             Console.ReadLine();
         }
     }
 }
+
