@@ -101,6 +101,32 @@ namespace Feb22
             }
             */
 
+            // Címletezés, működik
+            /*
+
+            int osszeg;
+            int maradek = 0;
+            int db;
+            int[] cimletek = new int[12] {20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5};
+            
+
+            Console.WriteLine("Adja meg az összeget: ");
+            osszeg = int.Parse(Console.ReadLine());
+            
+
+            for (int i = 0; i < 12; i++)
+            {
+                maradek = osszeg % cimletek[i];
+                db = osszeg / cimletek[i];
+                osszeg = maradek;
+                Console.WriteLine(db + " * " + cimletek[i]);
+                Console.WriteLine("Maradék: " + maradek + "\n");
+                //Console.WriteLine("Összeg: " + osszeg + "\n");
+            }
+            */
+
+
+
             Console.ReadLine();
         }
     }
