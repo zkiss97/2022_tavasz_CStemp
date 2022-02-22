@@ -10,6 +10,8 @@ namespace Feb22
     {
         static void Main(string[] args)
         {
+            // Testtömegindex kiszámítása
+            
             int heightCm;
             float weight;
             float index;
@@ -18,6 +20,8 @@ namespace Feb22
             Console.WriteLine("Adja meg a magasságát (cm): ");
             heightCm = int.Parse(Console.ReadLine());
             float heightM = heightCm / 100;
+            Console.WriteLine(heightM + "\n\n");
+            // lecsapja a törtrészt. 180 centivel teszteltem, 1-et ad vissza.
 
             Console.WriteLine("Adja meg a súlyát (kg): ");
             weight = float.Parse(Console.ReadLine());
@@ -28,6 +32,8 @@ namespace Feb22
             Console.WriteLine(negyzetmeterkisfroccs);
 
             Console.WriteLine("Testtömegindexe: " + index);
+
+            
 
             Console.ReadLine();
         }
