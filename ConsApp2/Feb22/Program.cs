@@ -60,11 +60,21 @@ namespace Feb22
 
 
 
-            // Mezgaz jóslás
+            // Mezgaz jóslás, működik
             //feltételeztem hogy egész tonna búzát vetettek, és szintén egész tonna termett
 
+            /*
             int elvetett;
             Random rnd = new Random();
+
+            Console.WriteLine("Adja meg mennyi búzát vetett az idén (tonna): ");
+            elvetett = int.Parse(Console.ReadLine());
+
+            int hozam = rnd.Next(5, 15);
+            Console.WriteLine("Az idén várható hozam: " + elvetett * hozam + " tonna.");
+            */
+
+
 
 
             Console.ReadLine();
