@@ -125,7 +125,29 @@ namespace Feb22
             }
             */
 
+            /*******************/
 
+            // Otthoni feladat, kamatos kamat
+
+            int osszeg;
+            //float vegosszeg;
+            float kamatlab;
+            int evek;
+
+            Console.WriteLine("összeg input:");
+            osszeg = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("évek input:");
+            evek = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("kamatláb input:");
+            kamatlab = float.Parse(Console.ReadLine()) / 100 + 1;
+
+            for (int i = 0; i < evek; i++)
+            {
+                osszeg = osszeg * kamatlab;
+                Console.WriteLine(osszeg);
+            }
 
             Console.ReadLine();
         }
