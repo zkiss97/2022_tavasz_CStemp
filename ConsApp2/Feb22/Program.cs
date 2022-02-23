@@ -128,8 +128,8 @@ namespace Feb22
             /*******************/
 
             // Otthoni feladat, kamatos kamat
-
-            int osszeg;
+            /*
+            float osszeg;
             //float vegosszeg;
             float kamatlab;
             int evek;
@@ -148,6 +148,7 @@ namespace Feb22
                 osszeg = osszeg * kamatlab;
                 Console.WriteLine(osszeg);
             }
+            */
 
             Console.ReadLine();
         }
