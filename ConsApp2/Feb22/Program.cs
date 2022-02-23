@@ -125,7 +125,7 @@ namespace Feb22
             }
             */
 
-            /*******************/
+            /*************Feb.23**************/
 
             // Otthoni feladat, kamatos kamat
             /*
@@ -149,6 +149,25 @@ namespace Feb22
                 Console.WriteLine(osszeg);
             }
             */
+
+            // Dinnye
+
+            /*
+            int db;
+            int atmero;
+            float sum;
+
+            Console.WriteLine("Dinnyék darabszáma:");
+            db = int.Parse(Console.ReadLine());
+            Console.WriteLine("Dinnye átmérő (cm): ");
+            atmero = int.Parse(Console.ReadLine());
+
+            sum = db * (2 * atmero + 60) / 100;
+
+            Console.WriteLine(sum + " méter szallagra van szükség.");
+            */
+
+
 
             Console.ReadLine();
         }
