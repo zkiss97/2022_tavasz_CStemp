@@ -168,7 +168,8 @@ namespace Feb22
             */
 
             // Csempe
-
+            //nem tudom mi a hiba
+            /*
             float szelesseg;
             float magassag;
             float terulet;
@@ -180,7 +181,13 @@ namespace Feb22
             magassag = float.Parse(Console.ReadLine()) * 100;
             terulet = szelesseg * magassag / 10000;
 
-            Console.WriteLine(terulet + "m2");
+            Console.WriteLine(terulet + " m2");
+
+            csempek_szama = (terulet / 0,04);
+
+            Console.WriteLine(csempek_szama + " db csempe");
+            */
+
 
 
 
