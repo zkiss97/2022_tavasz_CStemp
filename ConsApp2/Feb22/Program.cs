@@ -167,6 +167,21 @@ namespace Feb22
             Console.WriteLine(sum + " méter szallagra van szükség.");
             */
 
+            // Csempe
+
+            float szelesseg;
+            float magassag;
+            float terulet;
+            float csempek_szama;
+
+            Console.WriteLine("Szélesség (m):");
+            szelesseg = float.Parse(Console.ReadLine()) * 100;
+            Console.WriteLine("Magasság (cm): ");
+            magassag = float.Parse(Console.ReadLine()) * 100;
+            terulet = szelesseg * magassag / 10000;
+
+            Console.WriteLine(terulet + "m2");
+
 
 
             Console.ReadLine();
